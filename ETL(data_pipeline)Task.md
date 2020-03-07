@@ -6,3 +6,6 @@
 "206.52.21.11" that IP means -> Carpinteria, California, U.S.
 4. Missing:
 IP="" -> #no data so improvisation needs :)
+
+------------
+#After doing all these task that data going to store into single DB (data lake). It is easier to work with. Some example Google's BigQuery, Spark, etc.
