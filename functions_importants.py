@@ -14,3 +14,13 @@ truck = Truck()
 
 print(isinstance(eng, Engine))
 print(isinstance(eng,Truck)) #as youu see the answers is obvious.. .
+
+
+
+def main():
+    print("name")
+
+
+if __name__ == "__main__":
+    print("hello main")
+    
