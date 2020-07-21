@@ -17,6 +17,21 @@ data=["AA"]
 
 total = starter + length + writeDev + devID + regionID + registerHigh + registerLow + bytelen + data
 
+# other .... read serial number register
+# 5E 02 01 00 1D 0E
+
+starter = ["E0"]
+length=["0A"]
+writeDev=["5E"]
+devID=["02"]
+regionID=["01"]
+registerHigh=["00"]
+registerLow = ["1D"]
+bytelen=["01"]
+data=["0E"]
+
+total = starter + length + writeDev + devID + regionID + registerHigh + registerLow + bytelen + data
+
 print(total)
 
 
