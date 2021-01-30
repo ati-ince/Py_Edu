@@ -4,7 +4,7 @@
 # [starter Len read/write devID regID Register LowAdress Byte DATA CRC]
 
 #E0 0A 5F 02 01 00 08 01 AB FF
-
+'''
 starter = ["E0"]
 length=["0A"]
 writeDev=["5F"]
@@ -16,7 +16,10 @@ bytelen=["01"]
 data=["AA"]
 
 total = starter + length + writeDev + devID + regionID + registerHigh + registerLow + bytelen + data
+'''
+### 
 
+'''
 # other .... read serial number register
 # 5E 02 01 00 1D 0E
 
@@ -31,6 +34,20 @@ bytelen=["01"]
 data=["0E"]
 
 total = starter + length + writeDev + devID + regionID + registerHigh + registerLow + bytelen + data
+'''
+
+
+starter = ["E0"]
+length=["0A"]
+writeDev=["5E"]
+devID=["02"]
+regionID=["01"]
+registerHigh=["00"]
+registerLow = ["04"]
+bytelen=["01"]
+data=["AA"]
+
+total = starter + length + writeDev + devID + regionID + registerHigh + registerLow + bytelen# + data
 
 print(total)
 
